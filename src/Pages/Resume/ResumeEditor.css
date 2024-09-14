@@ -1,0 +1,169 @@
+/* Overall Resume Editor Container */
+.resume-builder {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 20px;
+}
+
+/* Left Column: Input Fields/Editor */
+.editor {
+  flex: 1; /* Takes up the left-hand side */
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  height: auto;
+  overflow-y: auto;
+  max-height: 90vh; /* Keep height manageable */
+}
+
+.editor h2 {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+input[type="text"], input[type="email"], input[type="tel"], textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+textarea {
+  resize: vertical;
+}
+
+input[type="file"] {
+  margin-bottom: 10px;
+}
+
+.btn-export {
+  padding: 12px 24px;
+  background-color: #D2A7EE;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 14px;
+  width: auto; 
+  display: inline-block;
+  margin-top: 20px;
+  margin-left: auto; 
+  margin-right: 0; 
+}
+
+.btn-export:hover {
+  background-color: #A786BF;
+}
+
+
+
+.resume-preview {
+  flex: 1;
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 50%; 
+  position: relative;
+  height: auto;
+}
+
+
+.resume-profile-pic {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%; 
+  position: absolute;
+  top: 30px;
+  right: 30px; 
+  object-fit: cover;
+  border: 3px solid #000; 
+  z-index: 10; 
+}
+
+
+.personal-info {
+  padding-right: 170px; 
+  position: relative;
+  z-index: 1;
+}
+
+.personal-info h1 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+}
+
+.personal-info p {
+  font-size: 14px;
+  color: #666;
+  margin: 5px 0;
+}
+
+
+.resume-section {
+  margin-bottom: 20px;
+}
+
+.resume-section h2 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.resume-section p {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #666;
+}
+
+
+.skills-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.skills-list li {
+  display: inline-block;
+  background-color: #f1f1f1;
+  color: #333;
+  padding: 5px 10px;
+  margin: 5px;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+
+.education-entry, .experience-entry {
+  margin-bottom: 15px;
+}
+
+.education-entry h3, .experience-entry h3 {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+}
+
+.education-entry p, .experience-entry p {
+  font-size: 14px;
+  color: #666;
+}
+
+
+.profile-preview {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-top: 10px;
+  object-fit: cover;
+  border: 2px solid #000; 
+}

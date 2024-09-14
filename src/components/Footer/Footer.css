@@ -1,0 +1,137 @@
+/* Footer Container */
+.footer {
+  background-color: #1c1c1c;
+  color: #fff;
+  padding: 40px 0;
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Footer Content */
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  flex-wrap: wrap;
+}
+
+/* Footer Left */
+.footer-content-left {
+  flex: 1;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.footer-content-left img {
+  width: 40px; 
+  height: 40px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.footer-content-left img:hover {
+  transform: scale(1.1); 
+}
+
+.footer-content-left p {
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+.footer-social-icons a {
+  margin: 0 10px;
+  font-size: 1.5rem;
+  color: #fff;
+  transition: color 0.3s;
+}
+
+.footer-social-icons a:hover {
+  color: #A786BF;
+}
+
+/* Footer Center */
+.footer-content-center {
+  flex: 1;
+  margin-bottom: 20px;
+}
+
+.footer-content-center h2 {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+}
+
+.footer-content-center ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer-content-center li {
+  margin-bottom: 10px;
+}
+
+.footer-content-center a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-content-center a:hover {
+  color: #A786BF;
+}
+
+/* Footer Right */
+.footer-content-right {
+  flex: 1;
+  margin-bottom: 20px;
+}
+
+.footer-content-right h2 {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+}
+
+.footer-content-right ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer-content-right li {
+  margin-bottom: 10px;
+  font-size: 1rem;
+}
+
+
+hr {
+  margin: 20px 0;
+  border: 0.5px solid #444;
+}
+
+/* Footer Bottom */
+.footer-bottom {
+  font-size: 0.9rem;
+  color: #aaa;
+}
+
+
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-content-left, .footer-content-center, .footer-content-right {
+    margin-bottom: 30px;
+  }
+
+  .footer-content-left {
+    text-align: center;
+  }
+
+  .footer-logo {
+    margin: 0 auto;
+  }
+}

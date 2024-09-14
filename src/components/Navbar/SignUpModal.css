@@ -1,0 +1,157 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  
+  .modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    background-color: white;
+    width: 90%;
+    max-width: 800px;
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    position: relative;
+  }
+  
+  .close-modal {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: rgb(204, 195, 195);
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+  .modal-body {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .left-side, .right-side {
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .left-side {
+    background-color: #D2A7EE; 
+    color: white;
+    width: 50%;
+  }
+  
+  .left-side h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+  
+  .left-side ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .left-side li {
+    font-size: 18px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .left-side li::before {
+    margin-right: 10px;
+    color: white;
+  }
+  
+  .left-side img {
+    margin-top: 20px;
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .right-side {
+    width: 50%;
+  }
+  
+  .right-side h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #000;
+  }
+  
+  .right-side p {
+    margin-bottom: 20px;
+    color: #000;
+  }
+  
+  .right-side a {
+    color: #00a;
+    text-decoration: none;
+  }
+  
+  .right-side a:hover {
+    text-decoration: underline;
+  }
+  
+  
+  .google-btn, .email-btn, .github-btn, .facebook-btn {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #000;
+    color: #fff;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .google-btn:hover, .email-btn:hover, .apple-btn:hover, .facebook-btn:hover {
+    background-color: #D2A7EE;
+    color: #000;
+  }
+  
+  .or-separator {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 14px;
+    color: #888;
+  }
+  
+  @media (max-width: 768px) {
+    .modal-content {
+      flex-direction: column;
+      max-width: 95%;
+    }
+  
+    .left-side, .right-side {
+      width: 100%;
+      padding: 20px;
+    }
+  }
+  

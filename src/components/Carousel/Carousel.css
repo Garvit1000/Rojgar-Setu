@@ -1,0 +1,35 @@
+.carousel {
+    display: flex;
+    align-items: center;
+    padding: 40px 20px;
+    background-color: #fff;
+    position: relative;
+  }
+  
+  .carousel-content {
+    display: flex;
+    gap: 20px;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+  }
+  
+  .carousel-btn {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 50%;
+    padding: 10px;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 18px;
+  }
+  
+  .carousel-btn.left {
+    left: 10px;
+  }
+  
+  .carousel-btn.right {
+    right: 10px;
+  }
+  

@@ -1,0 +1,64 @@
+.profile-page {
+  background-color: #FAF4FF;
+  padding: 2rem;
+  color: #333;
+  font-family: 'Arial', sans-serif;
+}
+
+.profile-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.profile-image {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-right: 20px;
+  border: 2px solid #A786BF;
+}
+
+.profile-info h1 {
+  font-size: 1.8rem;
+  color: #A786BF;
+}
+
+.profile-info span {
+  font-size: 1.2rem;
+  color: #D2A7EE;
+}
+
+.profile-info p {
+  font-size: 1rem;
+  margin: 0.5rem 0;
+}
+
+.edit-profile-button {
+  padding: 0.6rem 1.2rem;
+  background-color: #D2A7EE;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.edit-profile-button:hover {
+  background-color: #A786BF;
+}
+
+.profile-sections {
+  margin-top: 2rem;
+}
+
+.profile-section h2 {
+  font-size: 1.4rem;
+  color: #A786BF;
+  margin-bottom: 0.8rem;
+}
+
+.profile-section p {
+  font-size: 1.1rem;
+  color: #555;
+}
